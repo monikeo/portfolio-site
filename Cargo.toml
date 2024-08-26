@@ -4,6 +4,7 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+chrono = "0.4.38"
 console_error_panic_hook = "0.1.7"
 leptos = { version = "0.6.14", features = ["tracing", "csr"] }
 leptos_meta = "0.6.14"

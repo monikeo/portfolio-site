@@ -11,6 +11,12 @@ use pages::{
     blog_page::BlogPage
 };
 
+mod components;
+use components:: {
+    header::Header,
+    footer::Footer,
+};
+
 fn main() {
     console_error_panic_hook::set_once();
     mount_to_body(|| view! { <App /> })
@@ -24,34 +30,18 @@ fn App() -> impl IntoView {
         <Stylesheet id="leptos" href="/style/output.css" />
         <Title formatter=|text| format!("{text} - Keo Moni") />
         <Router>
-            <Header/> 
+            <Header /> 
             <main>
                 <Routes>
                     <Route path="/" view=HomePage />
                     <Route path="/about" view=AboutPage />
                     <Route path="/contact" view=ContactPage />
                     <Route path="/projects" view=ProjectsPage />
-                    <Route path="/blog" view=BlogPage />
+                    <Route path="/blogs" view=BlogPage />
                 </Routes>
             </main>
-            <Header/>
+            <Footer />
         </Router>
     }
 }
 
-#[component]
-pub fn Header() -> impl IntoView {
-    view! {
-        <header>
-            <h1>"My Portfolio"</h1>
-            <nav>
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/about">About</a></li>
-                    <li><a href="/projects">Projects</a></li>
-                    <li><a href="/contact">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-    }
-}
