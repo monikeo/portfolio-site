@@ -5,3 +5,6 @@ pub mod header;
 pub mod hero_section;
 pub mod page_wrapper;
 pub mod project_card;
+pub mod container;
+pub mod avatar;
+pub mod navigation;

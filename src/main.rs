@@ -30,17 +30,19 @@ fn App() -> impl IntoView {
         <Stylesheet id="leptos" href="/style/output.css" />
         <Title formatter=|text| format!("{text} - Keo Moni") />
         <Router>
-            <Header /> 
-            <main>
-                <Routes>
-                    <Route path="/" view=HomePage />
-                    <Route path="/about" view=AboutPage />
-                    <Route path="/contact" view=ContactPage />
-                    <Route path="/projects" view=ProjectsPage />
-                    <Route path="/blogs" view=BlogPage />
-                </Routes>
-            </main>
-            <Footer />
+            <div class="">
+                <Header /> 
+                <main>
+                    <Routes>
+                        <Route path="/" view=HomePage />
+                        <Route path="/about" view=AboutPage />
+                        <Route path="/contact" view=ContactPage />
+                        <Route path="/projects" view=ProjectsPage />
+                        <Route path="/blogs" view=BlogPage />
+                    </Routes>
+                </main>
+                <Footer />
+            </div>
         </Router>
     }
 }
