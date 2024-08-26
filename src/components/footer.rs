@@ -2,19 +2,12 @@ use leptos::*;
 use chrono::{Utc, Datelike};
 
 // Define the navigation items
-#[derive(Clone, Copy)]
-struct Navigation {
-    href: &'static str,
-    label: &'static str,
-}
-
-// Define the navigation items array
-const NAVIGATIONS: &[Navigation] = &[
-    Navigation { href: "/blogs", label: "Blogs" },
-    Navigation { href: "/projects", label: "Projects" },
-    Navigation { href: "/courses", label: "Courses" },
-    Navigation { href: "/snippets", label: "Snippets" },
-    Navigation { href: "/resources", label: "Resources" },
+const NAVIGATIONS: &[(&str, &str)] = &[
+    ("/blogs", "Blogs"),
+    ("/projects", "Projects"),
+    ("/courses", "Courses"),
+    ("/achievement", "Achievement"),
+    ("/taekwondo", "Taekwondo"),
 ];
 
 // Define the Container components as placeholders
@@ -58,8 +51,8 @@ pub fn Footer() -> impl IntoView {
                             <div class="flex gap-6 text-sm font-medium text-zinc-800 dark:text-zinc-200">
                             {NAVIGATIONS.iter().map(|nav| {
                                     view! { 
-                                        <NavLink href=nav.href>
-                                            {nav.label}
+                                        <NavLink href=nav.0>
+                                            {nav.1}
                                         </NavLink>
                                     }
                                 }).collect::<Vec<_>>()}

@@ -1,5 +1,16 @@
 use leptos::*;
 
+// Define the navigation items
+const NAVIGATIONS: &[(&str, &str)] = &[
+    ("/", "Home"),
+    ("/#publications", "Publications"),
+    ("/projects", "Projects"),
+    ("/courses", "Courses"),
+    ("/snippets", "Snippets"),
+    ("/resources", "Resources"),
+    ("/articles", "Posts"),
+];
+
 #[component]
 pub fn Header() -> impl IntoView {
     view! {
