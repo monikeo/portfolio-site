@@ -1,0 +1,20 @@
+[package]
+name = "portfolio-site"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+console_error_panic_hook = "0.1.7"
+leptos = { version = "0.6.14", features = ["tracing", "csr"] }
+leptos_meta = "0.6.14"
+leptos_router = { version = "0.6.14", features = ["csr"] }
+
+
+[package.metadata.leptos]
+# The name used by wasm-bindgen/cargo-leptos for the JS/WASM bundle. Defaults to the crate name
+#output-name = "portfolio-site"  # Note this value here!!
+# IMPORTANT! Remove or comment-out
+#style-file = "style/main.scss"
+# Activates the tailwind build
+tailwind-input-file = "style/tailwind.css"
+tailwind-config-file = "tailwind.config.js"
