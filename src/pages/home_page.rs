@@ -1,12 +1,24 @@
 use leptos::*;
 use leptos_meta::*;
 
+use crate::components::{
+    hero_section::{
+        Hero1
+    },
+    container::{
+        ContainerInner,
+        ContainerOuter
+    }
+};
+
+#[warn(non_snake_case)]
 #[component]
 pub fn HomePage() -> impl IntoView {
     view! {
-        <div class="bg-gradient-to-tl">
-        <Title text="Home" />
-        <h1> Home Page </h1>
-        </div>
+        <main>
+            <ContainerInner>
+                <Hero1 />
+            </ContainerInner>
+        </main>
     }
 }

@@ -132,7 +132,7 @@ pub fn NavBarEnd() -> impl IntoView {
 #[component]
 pub fn Nav() -> impl IntoView {
     view!{
-        <div class="shadow-sm backdrop-blur-md w-full navbar bg-base-100 bg-opacity-10">
+        <div class="shadow-sm backdrop-blur-md w-full navbar bg-base-200 bg-opacity-10">
                 <NavBarStart /> 
                 <NavBarCenter navigations_link=NAVIGATIONS/>
                 <NavBarEnd />
