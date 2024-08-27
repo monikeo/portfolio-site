@@ -1,0 +1,50 @@
+# https://skillicons.dev/icons?i=
+# <img src="https://skillicons.dev/icons?i=c" height="30" alt="c logo"  />
+[[language]]
+name = "Rust"
+skill_icon = "rust"
+
+[[language]]
+name = "Python"
+skill_icon = "py"
+
+[[language]]
+name = "C"
+skill_icon = "c"
+
+[[tool]]
+name = "Linux"
+skill_icon = "linux"
+
+[[tool]]
+name = "Arch"
+skill_icon = "arch"
+
+[[tool]]
+name = "Ubuntu"
+skill_icon = "ubuntu"
+
+[[tool]]
+name = "Vim"
+skill_icon = "vim"
+
+[[tool]]
+name = "Arduino"
+skill_icon = "arduino"
+
+[[tool]]
+name = "Git"
+skill_icon = "git"
+
+[[tool]]
+name = "Github"
+skill_icon = "github"
+
+[[tool]]
+name = "Kali Linux"
+skill_icon = "kali"
+
+[[tool]]
+name = "PostgreSql"
+skill_icon = "postgres"
+
