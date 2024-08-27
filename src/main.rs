@@ -40,6 +40,7 @@ fn App() -> impl IntoView {
                         <Route path="/contact" view=ContactPage />
                         <Route path="/projects" view=ProjectsPage />
                         <Route path="/blogs" view=BlogPage />
+                        <Route path="/portfolio-site" view=HomePage />
                     </Routes>
                 </main>
                 <Footer />
