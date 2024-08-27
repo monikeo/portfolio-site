@@ -1,5 +1,12 @@
 use leptos::*;
 
+use crate::components::{
+    navigation::Nav,
+    container::{
+        ContainerOuter,
+        ContainerInner
+    }
+};
 // Define the navigation items
 const NAVIGATIONS: &[(&str, &str)] = &[
     ("/", "Home"),
@@ -9,6 +16,7 @@ const NAVIGATIONS: &[(&str, &str)] = &[
     ("/contact", "Contact"),
     ("/about", "About"),
 ];
+
 
 // Define AvatarContainer component
 #[component]
@@ -31,18 +39,16 @@ fn Avatar(large: bool, class: Option<String>) -> impl IntoView {
 
 #[component]
 pub fn Header() -> impl IntoView {
-    let (is_home_page, set_is_home_page) = create_signal(true);
-    let (scroll_y, set_scroll_y) = create_signal(0);
-    let (header_height, set_header_height) = create_signal(0);
-    let (header_mb, set_header_mb) = create_signal(0);
-    let (avatar_transform, set_avatar_transform) = create_signal("translate3d(0, 0, 0) scale(1)");
-
     view! {
-        <header 
-            class="pointer-events-none relative z-50 flex flex-col"
-        >
-            <h3>haha</h3>
+        <header class="footer footer-center text-base-centent rounded pt-1 pb-1">
+            <ContainerOuter>
+                <div class="w-full">
+                    <ContainerInner>
+                        <Nav />
+                    </ContainerInner>
+                </div>
+            </ContainerOuter>
+
         </header>
-        <h1> Header </h1>
     }
 }

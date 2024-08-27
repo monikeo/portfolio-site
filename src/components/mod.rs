@@ -8,3 +8,4 @@ pub mod project_card;
 pub mod container;
 pub mod avatar;
 pub mod navigation;
+pub mod hero_language_tool;
