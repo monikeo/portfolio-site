@@ -11,3 +11,4 @@ pub mod avatar;
 pub mod navigation;
 pub mod hero_language_tool;
 pub mod button;
+pub mod error404;

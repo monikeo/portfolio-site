@@ -8,7 +8,8 @@ use pages::{
     about_page::AboutPage,
     project_page::ProjectsPage,
     contact_page::ContactPage,
-    blog_page::BlogPage
+    blog_page::BlogPage,
+    error404_page::Error404Page
 };
 
 mod components;
@@ -40,7 +41,7 @@ fn App() -> impl IntoView {
                         <Route path="/contact" view=ContactPage />
                         <Route path="/projects" view=ProjectsPage />
                         <Route path="/blogs" view=BlogPage />
-                        <Route path="/portfolio-site" view=HomePage />
+                        <Route path="/*any" view=Error404Page />
                     </Routes>
                 </main>
                 <Footer />

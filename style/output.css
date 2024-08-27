@@ -1512,6 +1512,10 @@ html {
   .btn-accent {
     --btn-color: var(--fallback-a);
   }
+
+  .btn-error {
+    --btn-color: var(--fallback-er);
+  }
 }
 
 @supports (color: color-mix(in oklab, black, black)) {
@@ -1561,12 +1565,22 @@ html {
   .btn-accent {
     --btn-color: var(--a);
   }
+
+  .btn-error {
+    --btn-color: var(--er);
+  }
 }
 
 .btn-accent {
   --tw-text-opacity: 1;
   color: var(--fallback-ac,oklch(var(--ac)/var(--tw-text-opacity)));
   outline-color: var(--fallback-a,oklch(var(--a)/1));
+}
+
+.btn-error {
+  --tw-text-opacity: 1;
+  color: var(--fallback-erc,oklch(var(--erc)/var(--tw-text-opacity)));
+  outline-color: var(--fallback-er,oklch(var(--er)/1));
 }
 
 .btn.glass {
@@ -2252,6 +2266,10 @@ html {
   margin: 0.75rem;
 }
 
+.m-auto {
+  margin: auto;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -2263,6 +2281,10 @@ html {
 
 .mt-3 {
   margin-top: 0.75rem;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
 }
 
 .block {
@@ -2309,8 +2331,31 @@ html {
   height: 1px;
 }
 
+.h-full {
+  height: 100%;
+}
+
+.h-max {
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.max-h-max {
+  max-height: -moz-max-content;
+  max-height: max-content;
+}
+
 .min-h-screen {
   min-height: 100vh;
+}
+
+.min-h-max {
+  min-height: -moz-max-content;
+  min-height: max-content;
 }
 
 .w-0 {
@@ -2378,12 +2423,30 @@ html {
   transform-origin: left;
 }
 
+.select-none {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
 .flex-col {
   flex-direction: column;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.items-start {
+  align-items: flex-start;
+}
+
 .items-center {
   align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .justify-between {
@@ -2406,6 +2469,10 @@ html {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.break-words {
+  overflow-wrap: break-word;
 }
 
 .rounded {
@@ -2522,6 +2589,10 @@ html {
   padding: 1px;
 }
 
+.p-5 {
+  padding: 1.25rem;
+}
+
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -2535,6 +2606,11 @@ html {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .pb-1 {
@@ -2551,6 +2627,10 @@ html {
 
 .pt-10 {
   padding-top: 2.5rem;
+}
+
+.pb-7 {
+  padding-bottom: 1.75rem;
 }
 
 .text-center {
@@ -2572,6 +2652,21 @@ html {
   line-height: 1.75rem;
 }
 
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-9xl {
+  font-size: 8rem;
+  line-height: 1;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -2580,8 +2675,16 @@ html {
   font-weight: 500;
 }
 
+.font-black {
+  font-weight: 900;
+}
+
 .uppercase {
   text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
 }
 
 .normal-case {
@@ -2614,6 +2717,11 @@ html {
 .text-zinc-800 {
   --tw-text-opacity: 1;
   color: rgb(39 39 42 / var(--tw-text-opacity));
+}
+
+.text-gray-400 {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
 .no-underline {
@@ -2784,6 +2892,12 @@ html {
 @media (min-width: 640px) {
   .sm\:flex-row {
     flex-direction: row;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:text-\[300px\] {
+    font-size: 300px;
   }
 }
 

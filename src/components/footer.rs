@@ -38,7 +38,7 @@ pub fn Footer() -> impl IntoView {
                 <div class="border-t border-zinc-100 pt-10 pb-10 dark:border-zinc-700/40 w-full">
                     <ContainerInner>
                         <div class="flex flex-col items-center justify-between gap-6 sm:flex-row">
-                            <div class="flex gap-6 text-sm font-medium text-zinc-800 dark:text-zinc-200">
+                            <div class="flex gap-6 text-sm font-medium text-zinc-400 dark:text-zinc-200">
                                 {NAVIGATIONS.iter().map(|nav| {
                                     view! { 
                                         <NavLink href=nav.0>
