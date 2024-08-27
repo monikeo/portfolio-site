@@ -1,0 +1,43 @@
+title = "Moni Keo Portfolio"
+logo_image = ""
+hero_title = "Hi, I'm Moni Keo"
+hero_subtitle = "Cybersecurity Student & National Taekwondo Athlete"
+hero_image = ""
+about_me = "I'm a cybersecurity student with a passion for ethical hacking and a national Taekwondo athlete. I love building secure, high-performance applications with Rust."
+resume_link = "/assets/resume/moni_keo_resume.pdf"
+contact_email = "dark.moni.281000@gmail.com"
+
+[social_links]
+github = "https://github.com/monikeo"
+linkedin = "https://www.linkedin.com/in/monikeo281000"
+
+[[achievements]]
+title = "Bronze Medal - SEA Games 2023"
+description = "Represented Cambodia in the SEA Games 2023 and won 2 bronze medals in Taekwondo."
+date = "May 2023"
+
+
+[[achievements]]
+title = "Cybersecurity Certification"
+description = "Completed an advanced cybersecurity certification with a focus on ethical hacking."
+date = "July 2024"
+
+[[pages]]
+title = "About"
+link = "/about"
+
+[[pages]]
+title = "Portfolio"
+link = "/portfolio"
+
+[[pages]]
+title = "Achievements"
+link = "/achievements"
+
+[[pages]]
+title = "Resume"
+link = "/resume"
+
+[[pages]]
+title = "Contact"
+link = "/contact"
