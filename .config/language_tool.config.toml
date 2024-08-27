@@ -1,5 +1,7 @@
 # https://skillicons.dev/icons?i=
 # <img src="https://skillicons.dev/icons?i=c" height="30" alt="c logo"  />
+
+# Language skills with corresponding skill icons
 [[language]]
 name = "Rust"
 skill_icon = "rust"
@@ -12,6 +14,8 @@ skill_icon = "py"
 name = "C"
 skill_icon = "c"
 
+
+# Tool skills with corresponding skill icons
 [[tool]]
 name = "Linux"
 skill_icon = "linux"
