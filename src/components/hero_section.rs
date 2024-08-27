@@ -22,7 +22,7 @@ pub fn Hero1() -> impl IntoView {
                     <p class="py-6 w-4/5">
                         {hero1_content}
                     </p>
-                    <button class="btn btn-primary">
+                    <button class="btn btn-outline btn-accent">
                         {hero1_button}
                     </button>
                 </div>

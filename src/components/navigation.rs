@@ -1,11 +1,6 @@
 use leptos::*;
 
-
-#[derive(Clone)]
-pub struct NavigationLink {
-    pub href: &'static str,
-    pub label: &'static str,
-}
+use crate::components::theme_controller::ThemeController;
 
 // Define the navigation items
 const NAVIGATIONS: &[(&str, &str)] = &[
@@ -120,11 +115,16 @@ pub fn NavBarCenter(navigations_link: &'static [(&'static str, &'static str)]) -
 pub fn NavBarEnd() -> impl IntoView {
     view!{
         <div class="navbar-end">
+            /*
             <a href="#">
                 <button class="btn btn-ghost btn-circle  h-2 p-3">
                     <p>end</p> 
                 </button>
             </a>
+            */
+            <button class="btn btn-ghost btn-circle h-2 p-3">
+            <ThemeController />
+            </button>
         </div>
     }
 }

@@ -1,12 +1,15 @@
 use leptos::*;
 
-use crate::components::button::Button;
+use crate::components::button::{
+    button::Button1,
+    language_button::LanguageButton
+};
 
 #[component]
 pub fn HeroLangaugeTool() -> impl IntoView {
     let hero_title = "Language and Tool";
     view!{
-        <div className="min-h-screen hero bg-gradient-radial from-2023-bavarian-gold-4 to-2023-void-2 bg-blend-overlay pt-10">
+        <div className="min-h-screen hero bg-gradient-radial from-bavarian-gold-4 to-void-2 bg-blend-overlay pt-10">
             <div className="hero-overlay w-0 bg-opacity-60">
             </div>
             <div className="text-center hero-content">
@@ -16,9 +19,8 @@ pub fn HeroLangaugeTool() -> impl IntoView {
                     </h1>
 
                     <div className="dropdown dropdown-top">
-                        <Button class="umami--click--otherlangs-button">
-              Other languages
-            </Button>
+                        <LanguageButton text="Rust" />
+                        <Button1 />
                     </div>
                 </div>
             </div>
