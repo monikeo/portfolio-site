@@ -1,5 +1,28 @@
 use leptos::*;
 
+#[warn(non_snake_case)]
+#[component]
+pub fn ContainerOuter(children: Children) -> impl IntoView {
+    let class = "container-outer w-11/12";
+    view!{
+        <div class={class}>
+            {children()}
+        </div>
+    }
+}
+
+#[warn(non_snake_case)]
+#[component]
+pub fn ContainerInner(children: Children) -> impl IntoView {
+    let class = "container-inner w-full";
+    view!{
+        <div class={class}>
+            {children()}
+        </div>
+    }
+}
+
+#[warn(non_snake_case)]
 #[component]
 pub fn Container(class_name: Option<String>, children: Children) -> impl IntoView {
     view! {
@@ -9,6 +32,7 @@ pub fn Container(class_name: Option<String>, children: Children) -> impl IntoVie
     }
 }
 
+#[warn(non_snake_case)]
 #[component]
 pub fn AvatarContainer(class_name: Option<String>, children: Children) -> impl IntoView {
     view! {

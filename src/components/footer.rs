@@ -1,6 +1,13 @@
 use leptos::*;
 use chrono::{Utc, Datelike};
 
+use crate::components::{
+    container::{
+        ContainerOuter,
+        ContainerInner
+    }
+};
+
 // Define the navigation items
 const NAVIGATIONS: &[(&str, &str)] = &[
     ("/blogs", "Blogs"),
@@ -10,25 +17,8 @@ const NAVIGATIONS: &[(&str, &str)] = &[
     ("/taekwondo", "Taekwondo"),
 ];
 
-// Define the Container components as placeholders
-#[component]
-fn ContainerOuter(children: Children) -> impl IntoView {
-    view! { 
-        <div class="container-outer">
-            {children()}
-        </div>
-    }
-}
 
-#[component]
-fn ContainerInner(children: Children) -> impl IntoView {
-    view! { 
-        <div class="container-inner">
-            {children()}
-        </div>
-    }
-}
-
+#[warn(non_snake_case)]
 #[component]
 fn NavLink(href: &'static str, children: Children) -> impl IntoView {
     view! { 
@@ -38,18 +28,18 @@ fn NavLink(href: &'static str, children: Children) -> impl IntoView {
     }
 }
 
+#[warn(non_snake_case)]
 pub fn Footer() -> impl IntoView {
     let now = Utc::now();
     let year = now.year();
-    let author_name = "Moni Keo";
     view!{
-        <footer class="mt-32">
+        <footer class="footer footer-center bg-base-200 text-base-content rounded p-1">
             <ContainerOuter>
-                <div class="border-t border-zinc-100 pt-8 pb-16 dark:border-zinc-700/40">
+                <div class="border-t border-zinc-100 pt-10 pb-10 dark:border-zinc-700/40 w-full">
                     <ContainerInner>
                         <div class="flex flex-col items-center justify-between gap-6 sm:flex-row">
                             <div class="flex gap-6 text-sm font-medium text-zinc-800 dark:text-zinc-200">
-                            {NAVIGATIONS.iter().map(|nav| {
+                                {NAVIGATIONS.iter().map(|nav| {
                                     view! { 
                                         <NavLink href=nav.0>
                                             {nav.1}
@@ -58,9 +48,11 @@ pub fn Footer() -> impl IntoView {
                                 }).collect::<Vec<_>>()}
                             </div>
 
-                            <p class="text-sm text-zinc-400 dark:text-zinc-500">
-                            {format!("© {} {} . all rights reserved.", year, author_name)}
-                            </p>
+                            <aside>
+                                <p class="text-sm text-zinc-400 dark:text-zinc-500">
+                                    {format!("Copyright © {} - All right reserved", year)}
+                                </p>
+                            </aside>
                         </div>
                     </ContainerInner>
                 </div>
