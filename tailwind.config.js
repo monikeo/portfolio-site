@@ -2,7 +2,12 @@
 module.exports = {
   content: ["*.html", "./src/**/*.rs",],
   theme: {
-    extend: {},
+    extend: {
+        backgroundImage: {
+        'gradient-radial':
+          'radial-gradient(30% 50% at center 50%, var(--tw-gradient-stops))'
+        },
+    },
   },
   plugins: [
     require('daisyui'),

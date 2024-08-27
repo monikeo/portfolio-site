@@ -5,6 +5,9 @@ use crate::components::{
     hero_section::{
         Hero1
     },
+    hero_language_tool::{
+        HeroLangaugeTool
+    },
     container::{
         ContainerInner,
         ContainerOuter
@@ -18,6 +21,12 @@ pub fn HomePage() -> impl IntoView {
         <main>
             <ContainerInner>
                 <Hero1 />
+            </ContainerInner>
+        </main>
+
+        <main>
+            <ContainerInner>
+                <HeroLangaugeTool />
             </ContainerInner>
         </main>
     }
