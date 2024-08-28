@@ -2,6 +2,9 @@ use leptos::*;
 use leptos_meta::*;
 use leptos_router::*;
 
+mod configs;
+mod data;
+
 mod pages;
 use pages::{
     home_page::HomePage,
