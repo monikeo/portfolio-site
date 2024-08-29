@@ -14,7 +14,7 @@ use crate::components::{
     },
     project_highlight::ProjectHighLight,
     portfolio::{
-        education::EducationTimeline
+        education::Education
     }
 };
 
@@ -46,7 +46,7 @@ pub fn HomePage() -> impl IntoView {
         // Education
         <main>
             <ContainerInner>
-                <EducationTimeline />
+                <Education />
             </ContainerInner>
         </main>
     }

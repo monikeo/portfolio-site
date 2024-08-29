@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["*.html", "./src/**/*.rs",],
+  darkMode: 'selector',
   theme: {
     extend: {
         backgroundImage: {
@@ -18,10 +19,10 @@ module.exports = {
   daisyui: {
     themes: [
          {
-        mytheme: {
+        mydark: {
             "primary": "#2ac670",
             "secondary": "#e65f3f",
-            "accent": "#5b5c63",
+            "accent": "#ffffff",
             "neutral": "#3fa1f2",
             "base-100": "#000000",
             "info": "#2563eb",
@@ -33,11 +34,25 @@ module.exports = {
             "--rounded-box": "1rem",
             "--rounded-btn": "0.4rem"
           },
+        myday: {
+          "primary": "#009c66",
+          "secondary": "#d9534f",
+          "accent": "#000000",
+          "neutral": "#004080",
+          "base-100": "#f8f9fa",
+          "info": "#007bff",
+          "success": "#28a745",
+          "warning": "#ffc107",
+          "error": "#dc3545",
+          "display": "#000000",
+
+          "--rounded-box": "1rem",
+          "--rounded-btn": "0.4rem"
+        }
         },
-        "dark",
         "fantasy"
     ], // false: only light + dark | true: all themes | array: specific themes like this ["light", "dark", "cupcake"]
-    darkTheme: "mytheme", // name of one of the included themes for dark mode
+    darkTheme: "mydark", // name of one of the included themes for dark mode
     base: true, // applies background color and foreground color for root element by default
     styled: true, // include daisyUI colors and design decisions for all components
     utils: true, // adds responsive and modifier utility classes
@@ -45,5 +60,5 @@ module.exports = {
     logs: true, // Shows info about daisyUI version and used config in the console when building your CSS
     themeRoot: ":root", // The element that receives theme color CSS variables
   },
-  darkMode: ['class', '[data-theme="mytheme"]']
+  darkMode: ['class', '[data-theme="mydark"]', '[data-mode="mydark"]']
 }

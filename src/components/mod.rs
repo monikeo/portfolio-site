@@ -1,4 +1,5 @@
 pub mod blog_card;
+pub mod title;
 pub mod portfolio;
 pub mod project_highlight;
 pub mod social_media;
