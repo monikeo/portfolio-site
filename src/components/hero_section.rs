@@ -26,10 +26,10 @@ pub fn Hero1() -> impl IntoView {
                     alt={hero1_img_alt}
                     class="max-w-sm rounded-lg shadow-2xl" />
                 <div>
-                    <h1 class="text-5xl font-bold text-display">
+                    <h1 class="text-5xl font-bold text-accent">
                         {hero1_title}
                     </h1>
-                    <p class="py-6 w-4/5 text-display">
+                    <p class="py-6 w-4/5 text-accent">
                         {hero1_content}
                     </p>
                     <div>
@@ -44,7 +44,7 @@ pub fn Hero1() -> impl IntoView {
                             </button>
 
                             <button class="btn btn-outline">
-                                <a class="text-display">
+                                <a class="text-accent">
                                     {facebook}
                                 </a>
                             </button>

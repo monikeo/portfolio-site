@@ -1,18 +1,85 @@
 use leptos::*;
 
 #[component]
+pub fn SocialMediaIcon(label: &'static str, href: &'static str, children: Children) -> impl IntoView {
+    view!{
+        <a
+            class="inline-flex items-center rounded-lg p-2.5 text-sm text-accent hover:bg-accent hover:text-base-100"
+            aria-label={label}
+            href={href}>
+                {children()}
+        </a>
+    }
+}
+
+#[component]
 pub fn SocialMedia() -> impl IntoView {
     view! {
-        <div class="w-full h-auto py-8 flex items-center justify-center gap-2 flex-wrap">
-            <a href="javascript:;"
-      class="text-display p-2 rounded-lg flex items-center border border-display-300 justify-center transition-all duration-500 hover:border-gray-100 hover:bg-gray-200">
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 71 72"
-      fill="none">
-      <path
-        d="M46.4233 38.6403L47.7279 30.3588H39.6917V24.9759C39.6917 22.7114 40.8137 20.4987 44.4013 20.4987H48.1063V13.4465C45.9486 13.1028 43.7685 12.9168 41.5834 12.8901C34.9692 12.8901 30.651 16.8626 30.651 24.0442V30.3588H23.3193V38.6403H30.651V58.671H39.6917V38.6403H46.4233Z"
-        fill="#111827" />
-      </svg>
-      </a>
+        <div class="col-span-4 sm:col-span-2 md:col-span-2 lg:col-span-1 xl:col-span-1">
+            <ul class="mb-4 flex md:order-1 md:mb-0">
+                <li>
+                    <SocialMediaIcon label="Twitter"  href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="h-5 w-5">
+                                <path
+                                    d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c0 -.249 1.51 -2.772 1.818 -4.013z">
+                                </path>
+                            </svg>
+                    </SocialMediaIcon>
+                </li>
+                    // instagram
+                <li>
+                    <SocialMediaIcon label="Instagram" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="h-5 w-5">
+                                <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"></path>
+                                <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                                <path d="M16.5 7.5l0 .01"></path>
+                            </svg>
+                    </SocialMediaIcon>
+                </li>
+
+                // facebook
+                <li>
+                    <SocialMediaIcon label="Facebook" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" class="h-5 w-5">
+                    <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"></path>
+                </svg>
+                        </SocialMediaIcon>
+                </li>
+
+                <li>
+                    <SocialMediaIcon label="Wifi" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" class="h-5 w-5">
+                    <path d="M5 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+                    <path d="M4 4a16 16 0 0 1 16 16"></path>
+                    <path d="M4 11a9 9 0 0 1 9 9"></path>
+                </svg>
+                        </SocialMediaIcon>
+                </li>
+
+
+
+                <li>
+                    <SocialMediaIcon label="Github" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                    width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5">
+                    <path
+                        d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5">
+
+                    </path>
+                </svg>
+                        </SocialMediaIcon>
+                </li>
+            </ul>
         </div>
     }
 }

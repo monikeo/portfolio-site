@@ -12,28 +12,41 @@ use crate::components::{
         ContainerInner,
         ContainerOuter
     },
-    project_highlight::ProjectHighLight
+    project_highlight::ProjectHighLight,
+    portfolio::{
+        education::EducationTimeline
+    }
 };
 
 #[warn(non_snake_case)]
 #[component]
 pub fn HomePage() -> impl IntoView {
     view! {
+        // Hero1
         <main>
             <ContainerInner>
                 <Hero1 />
             </ContainerInner>
         </main>
 
+        // Tech Stack and Tool
         <main>
             <ContainerInner>
                 <HeroLangaugeTool />
             </ContainerInner>
         </main>
 
+        // Projects
         <main>
             <ContainerInner>
                 <ProjectHighLight />
+            </ContainerInner>
+        </main>
+
+        // Education
+        <main>
+            <ContainerInner>
+                <EducationTimeline />
             </ContainerInner>
         </main>
     }

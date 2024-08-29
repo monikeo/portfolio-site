@@ -3,7 +3,7 @@ use leptos::*;
 #[warn(non_snake_case)]
 #[component]
 pub fn ThemeController() -> impl IntoView {
-    let light_theme = "fantasy";
+    let light_theme = "myday";
     view!{
         <label class="swap swap-rotate">
             //this hidden checkbox controls the state -->
