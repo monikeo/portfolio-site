@@ -3368,8 +3368,36 @@ html {
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
 }
 
+.ring-2 {
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+}
+
 .ring-zinc-900\/5 {
   --tw-ring-color: rgb(24 24 27 / 0.05);
+}
+
+.ring-neutral {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: var(--fallback-n,oklch(var(--n)/var(--tw-ring-opacity)));
+}
+
+.ring-secondary {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: var(--fallback-s,oklch(var(--s)/var(--tw-ring-opacity)));
+}
+
+.ring-opacity-10 {
+  --tw-ring-opacity: 0.1;
+}
+
+.ring-opacity-30 {
+  --tw-ring-opacity: 0.3;
+}
+
+.ring-opacity-20 {
+  --tw-ring-opacity: 0.2;
 }
 
 .blur {
@@ -3607,6 +3635,15 @@ html {
   --tw-shadow: 2px 5px 50px -25px rgba(46,194,126,1);
   --tw-shadow-colored: 2px 5px 50px -25px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.hover\:ring-secondary:hover {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: var(--fallback-s,oklch(var(--s)/var(--tw-ring-opacity)));
+}
+
+.hover\:ring-opacity-100:hover {
+  --tw-ring-opacity: 1;
 }
 
 .focus\:outline-none:focus {

@@ -5,11 +5,7 @@ use leptos::*;
 pub fn Button(class: &'static str,children: Children) -> impl IntoView {
     view!{
         <div class="relative group m-3 w-fit inline-block">
-            /*
-            <div class="absolute -inset-0 group-hover:bg-gradient-to-r from-2023-bavarian-red-2 via-2023-bavarian-gold-2 to-2023-bavarian-blue-2 rounded-lg blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200">
-            </div>
-            */
-            <button class={format!("relative  btn btn-lg text-white ring-1 ring-2023-manga-3 rounded-2xl leading-none hover:text-shadow hover:shadow-[2px_5px_50px_-25px_rgba(46,194,126,1)] {}", class)}>
+            <button class={format!("relative btn text-accent ring-secondary ring-opacity-20 hover:ring-opacity-100 ring-1 rounded-2xl leading-none hover:text-shadow hover:shadow-[2px_5px_50px_-25px_rgba(46,194,126,1)] {}", class)}>
                 {children()}
             </button>
         </div>
