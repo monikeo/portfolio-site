@@ -14,10 +14,6 @@ pub fn Hero1() -> impl IntoView {
     let hero1_img = "https://drive.google.com/uc?export=view&id=1EBIbrsIZhrHqsD0B7GuLim23k26n0mM3";
     let hero1_img_alt = "";
 
-    let facebook = "";
-    let github = "";
-    let instagram = "";
-    let linkedin = "󰌻";
     view!{
         <div class="hero bg-base-100 min-h-screen">
             <div class="hero-content flex-col lg:flex-row-reverse">
@@ -41,12 +37,6 @@ pub fn Hero1() -> impl IntoView {
                             </button>
                             <button class="btn btn-outline btn-secondary">
                                 {hero1_button2}
-                            </button>
-
-                            <button class="btn btn-outline">
-                                <a class="text-accent">
-                                    {facebook}
-                                </a>
                             </button>
                     </div>
                 </div>
