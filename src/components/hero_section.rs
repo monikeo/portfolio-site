@@ -28,7 +28,7 @@ pub fn Hero1() -> impl IntoView {
                     <p class="py-6 w-4/5 text-accent">
                         {hero1_content}
                     </p>
-                    <div>
+                    <div class="mb-4">
                         <SocialMedia />
                     </div>
                     <div class="flex space-x-8">

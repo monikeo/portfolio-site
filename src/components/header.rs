@@ -44,7 +44,7 @@ pub fn Header() -> impl IntoView {
             <ContainerOuter>
                 <div class="w-full">
                     <ContainerInner>
-                        <Nav />
+                            <Nav />
                     </ContainerInner>
                 </div>
             </ContainerOuter>

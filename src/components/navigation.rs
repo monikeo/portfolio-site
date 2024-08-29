@@ -91,6 +91,7 @@ pub fn NavBarStart() -> impl IntoView {
 pub fn NavBarCenter(navigations_link: &'static [(&'static str, &'static str)]) -> impl IntoView {
     view!{
         <div class="navbar-center hidden lg:flex">
+            <div>
             <ul class="menu menu-horizontal p-1">
                 {navigations_link.iter().map(|nav| {
                     view!{
@@ -98,15 +99,11 @@ pub fn NavBarCenter(navigations_link: &'static [(&'static str, &'static str)]) -
                             <NavLink href={nav.0}>
                                 {nav.1}
                             </NavLink>
-                            /*
-                            <a href={nav.0}>
-                                {nav.1}
-                            </a>
-                            */
                         </li>
                     }
                 }).collect::<Vec<_>>()}
             </ul>
+            </div>
         </div>
     }
 }
