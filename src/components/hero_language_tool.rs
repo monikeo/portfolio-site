@@ -1,13 +1,17 @@
 use leptos::*;
 
+
 use crate::{
     data::language_tool_data::{
         PROGRAMMING_LANGUAGE,
         TECH_TOOL
     },
-    components::button::{
-        button::Button1,
-        language_button::LanguageButton
+    components::{
+        title::Title,
+        button::{
+            button::Button1,
+            language_button::LanguageButton
+        }
     }
 };
 
@@ -40,9 +44,7 @@ pub fn HeroLangaugeTool() -> impl IntoView {
         <div class="hero bg-base-100 min-h-fit">
             <div class="hero-content text-center">
                 <div class="max-w-xl">
-                    <h1 class="mb-6 text-3xl font-bold uppercase p-5">
-                        {hero_title}
-                    </h1>
+                    <Title text={hero_title} />
                     <div class="dropdown dropdown-top">
                         {
 
@@ -64,5 +66,6 @@ pub fn HeroLangaugeTool() -> impl IntoView {
                 </div>
             </div>
         </div>
+
     }
 }

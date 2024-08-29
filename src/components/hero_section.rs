@@ -2,6 +2,8 @@ use leptos::*;
 
 use crate::components::{
     social_media::SocialMedia,
+    about_modal::AboutModal,
+    button::button::Button2,
 };
 
 #[warn(non_snake_case)]
@@ -32,12 +34,8 @@ pub fn Hero1() -> impl IntoView {
                         <SocialMedia />
                     </div>
                     <div class="flex space-x-8">
-                            <button class="btn btn-outline btn-primary">
-                                {hero1_button1}
-                            </button>
-                            <button class="btn btn-outline btn-secondary">
-                                {hero1_button2}
-                            </button>
+                        <Button2 text={hero1_button1}/>
+                        <Button2 text={hero1_button2}/>
                     </div>
                 </div>
             </div>

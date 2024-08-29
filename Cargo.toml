@@ -8,6 +8,7 @@ chrono = "0.4.38"
 console_error_panic_hook = "0.1.7"
 lazy_static = "1.5.0"
 leptos = { version = "0.6.14", features = ["tracing", "csr"] }
+leptos-use = "0.13.0"
 leptos_meta = "0.6.14"
 leptos_router = { version = "0.6.14", features = ["csr"] }
 serde = { version = "1.0.209", features = ["derive"] }

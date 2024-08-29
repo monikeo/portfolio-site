@@ -173,7 +173,7 @@ pub fn EducationTimeline() -> impl IntoView {
 pub fn Education() -> impl IntoView {
     let title = "Education";
     view!{
-        <div class="hero bg-base-200 min-h-screen">
+        <div class="hero bg-base-100 min-h-screen">
             <div class="hero-content text-center">
                 <div class="max-w-full">
                     <Title text={title}/>

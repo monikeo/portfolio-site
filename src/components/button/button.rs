@@ -35,3 +35,18 @@ pub fn Button1() -> impl IntoView {
 
     }
 }
+
+#[warn(non_snake_case)]
+#[component]
+pub fn Button2(text: &'static str) -> impl IntoView {
+    view!{
+        <button 
+            class="bg-base-100 text-accent border border-accent border-b-4 font-medium overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group">
+            <span 
+                class="bg-base-100 shadow-accent absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)]">
+
+            </span>
+            {text}
+        </button>
+    }
+}

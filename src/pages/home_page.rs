@@ -12,6 +12,7 @@ use crate::components::{
         ContainerInner,
         ContainerOuter
     },
+    blog_highlight::BlogHighLight,
     project_highlight::ProjectHighLight,
     portfolio::{
         education::Education
@@ -36,10 +37,17 @@ pub fn HomePage() -> impl IntoView {
             </ContainerInner>
         </main>
 
-        // Projects
+        // Project
         <main>
             <ContainerInner>
                 <ProjectHighLight />
+            </ContainerInner>
+        </main>
+
+        // Blog 
+        <main>
+            <ContainerInner>
+                <BlogHighLight />
             </ContainerInner>
         </main>
 
