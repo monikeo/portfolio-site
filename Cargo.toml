@@ -6,12 +6,15 @@ edition = "2021"
 [dependencies]
 chrono = "0.4.38"
 console_error_panic_hook = "0.1.7"
+gloo-timers = { version = "0.3.0", features = ["futures"] }
 lazy_static = "1.5.0"
 leptos = { version = "0.6.14", features = ["tracing", "csr"] }
 leptos-use = "0.13.0"
 leptos_meta = "0.6.14"
 leptos_router = { version = "0.6.14", features = ["csr"] }
+reqwest = { version = "0.12.7", features = ["blocking", "json"] }
 serde = { version = "1.0.209", features = ["derive"] }
+serde_json = "1.0.127"
 toml = "0.8.19"
 
 

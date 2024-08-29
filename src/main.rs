@@ -4,6 +4,7 @@ use leptos_router::*;
 
 mod configs;
 mod data;
+mod fetch_data;
 
 mod pages;
 use pages::{
