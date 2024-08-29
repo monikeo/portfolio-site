@@ -1,5 +1,9 @@
 use leptos::*;
 
+use crate::components::{
+    social_media::SocialMedia,
+};
+
 #[warn(non_snake_case)]
 #[component]
 pub fn Hero1() -> impl IntoView {
@@ -23,6 +27,9 @@ pub fn Hero1() -> impl IntoView {
                     <p class="py-6 w-4/5">
                         {hero1_content}
                     </p>
+                    <div>
+                        <SocialMedia />
+                    </div>
                     <div class="flex space-x-8">
                             <button class="btn btn-outline btn-accent">
                                 {hero1_button1}

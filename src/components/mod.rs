@@ -1,4 +1,5 @@
 pub mod blog_card;
+pub mod social_media;
 pub mod theme_controller;
 pub mod contact_form;
 pub mod footer;
