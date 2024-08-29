@@ -11,7 +11,8 @@ use crate::components::{
     container::{
         ContainerInner,
         ContainerOuter
-    }
+    },
+    project_highlight::ProjectHighLight
 };
 
 #[warn(non_snake_case)]
@@ -27,6 +28,12 @@ pub fn HomePage() -> impl IntoView {
         <main>
             <ContainerInner>
                 <HeroLangaugeTool />
+            </ContainerInner>
+        </main>
+
+        <main>
+            <ContainerInner>
+                <ProjectHighLight />
             </ContainerInner>
         </main>
     }

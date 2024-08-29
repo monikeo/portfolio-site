@@ -1,4 +1,6 @@
 pub mod blog_card;
+pub mod portfolio;
+pub mod project_highlight;
 pub mod social_media;
 pub mod theme_controller;
 pub mod contact_form;

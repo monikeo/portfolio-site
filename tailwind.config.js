@@ -8,6 +8,9 @@ module.exports = {
           'radial-gradient(30% 50% at center 50%, var(--tw-gradient-stops))'
         },
     },
+    fontFamily: {
+      'mono': ['ui-monospace', 'SFMono-Regular'],
+    },
   },
   plugins: [
     require('daisyui'),
@@ -26,6 +29,9 @@ module.exports = {
             "warning": "#fbbf24",
             "error": "#ef4444",
             "display": "#ffffff",
+
+            "--rounded-box": "1rem",
+            "--rounded-btn": "0.4rem"
           },
         },
         "dark",

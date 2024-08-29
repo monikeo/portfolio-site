@@ -5,7 +5,7 @@ pub fn SocialMedia() -> impl IntoView {
     view! {
         <div class="w-full h-auto py-8 flex items-center justify-center gap-2 flex-wrap">
             <a href="javascript:;"
-      class="p-2 rounded-lg flex items-center border border-gray-300 justify-center transition-all duration-500 hover:border-gray-100 hover:bg-gray-200">
+      class="text-display p-2 rounded-lg flex items-center border border-display-300 justify-center transition-all duration-500 hover:border-gray-100 hover:bg-gray-200">
       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 71 72"
       fill="none">
       <path

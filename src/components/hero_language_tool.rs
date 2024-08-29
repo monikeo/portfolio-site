@@ -37,7 +37,7 @@ pub fn HeroLangaugeTool() -> impl IntoView {
     let hero_title = "Language and Tool";
 
     view!{
-        <div class="hero bg-base-200 min-h-screen">
+        <div class="hero bg-base-100 min-h-fit">
             <div class="hero-content text-center">
                 <div class="max-w-xl">
                     <h1 class="mb-6 text-3xl font-bold uppercase p-5">
@@ -45,6 +45,7 @@ pub fn HeroLangaugeTool() -> impl IntoView {
                     </h1>
                     <div class="dropdown dropdown-top">
                         {
+
                             PROGRAMMING_LANGUAGE.iter().map(|language| {
                                 view!{
                                     <LanguageButton text={language.0} icon_name={language.1} />

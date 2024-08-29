@@ -44,8 +44,8 @@ pub fn Hero1() -> impl IntoView {
                             </button>
 
                             <button class="btn btn-outline">
-                            <a class="btn-display">
-                            {facebook}
+                                <a class="text-display">
+                                    {facebook}
                                 </a>
                             </button>
                     </div>
